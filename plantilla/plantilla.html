@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ACME Arquitectura - Tienda en línea de planos, diseños 3D y maquetas profesionales.">
+    <title>ACME Arquitectura | Estudio y Tienda</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-compass-drafting"></i>ACME
+            </a>
+
+            <!-- Mobile cart (visible only on small screens) -->
+            <a href="#carrito" class="cart-icon d-lg-none ms-auto me-3 text-decoration-none">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-badge">2</span>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars fs-4"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <div class="d-none d-lg-flex align-items-center">
+                    <a href="#buscar" class="nav-link me-3"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#usuario" class="nav-link me-3"><i class="fa-regular fa-user"></i></a>
+                    <a href="#carrito" class="cart-icon text-decoration-none">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-badge">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <span class="hero-subtitle">Diseño Excepcional</span>
+                    <h1 class="hero-title">Espacios que Inspiran, Diseños que Perduran</h1>
+                </div>
+                <div class="col-lg-8 align-self-baseline mt-4">
+                    <p class="text-white-50 mb-5 fs-5">Descubre nuestra exclusiva colección de planos residenciales,
+                        visualizaciones 3D y maquetas a escala para tus proyectos.</p>
+                    <a class="btn btn-custom" href="#productos">Explorar Catálogo <i
+                            class="fa-solid fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features-section" id="servicios">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fa-solid fa-pen-ruler feature-icon"></i>
+                        <h3 class="feature-title">Planos Detallados</h3>
+                        <p class="feature-text">Diseños arquitectónicos completos con todas las especificaciones
+                            técnicas listas para ejecución de obra.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fa-solid fa-vr-cardboard feature-icon"></i>
+                        <h3 class="feature-title">Renders Fotorrealistas</h3>
+                        <p class="feature-text">Visualizaciones 3D de alta calidad para que puedas experimentar el
+                            espacio antes de construirlo.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fa-solid fa-cubes feature-icon"></i>
+                        <h3 class="feature-title">Modelos a Escala</h3>
+                        <p class="feature-text">Maquetas físicas artesanales construidas con precisión para
+                            presentaciones inmobiliarias de alto impacto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="productos">
+        <div class="container">
+            <h2 class="section-title">Colección Destacada</h2>
+
+            <div class="row g-5">
+                <!-- Product 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="assets/images/product_1.png" alt="Planos Residencia Oakwood" class="product-img">
+                            <div class="product-overlay">
+                                <button class="btn-quick-add"><i class="fa-solid fa-cart-plus me-2"></i> Añadir</button>
+                            </div>
+                        </div>
+                        <div class="product-body">
+                            <span class="product-category">Planos Ejecutivos</span>
+                            <h3 class="product-title">Residencia Minimalista</h3>
+                            <div class="product-price">$450.00 USD</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="assets/images/product_2.png" alt="Diseño de Interiores 3D" class="product-img">
+                            <div class="product-overlay">
+                                <button class="btn-quick-add"><i class="fa-solid fa-cart-plus me-2"></i> Añadir</button>
+                            </div>
+                        </div>
+                        <div class="product-body">
+                            <span class="product-category">Renders 3D</span>
+                            <h3 class="product-title">Paquete Interiorismo "Zen"</h3>
+                            <div class="product-price">$850.00 USD</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <img src="assets/images/product_3.png" alt="Maqueta Torre Comercial" class="product-img">
+                            <div class="product-overlay">
+                                <button class="btn-quick-add"><i class="fa-solid fa-cart-plus me-2"></i> Añadir</button>
+                            </div>
+                        </div>
+                        <div class="product-body">
+                            <span class="product-category">Maquetas Físicas</span>
+                            <h3 class="product-title">Torre Mixta Escala 1:100</h3>
+                            <div class="product-price">$1,200.00 USD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 pt-4">
+                <a href="#" class="btn btn-outline-dark px-5 py-3 rounded-0 fw-medium" style="letter-spacing: 1px;">VER
+                    TODO EL CATÁLOGO</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="#" class="footer-logo text-decoration-none">
+                        <i class="fa-solid fa-compass-drafting"></i> ACME
+                    </a>
+                    <p class="footer-text">Transformando ideas en realidades tangibles. Proveemos recursos
+                        arquitectónicos de la más alta calidad para profesionales y entusiastas del diseño.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-behance"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 offset-lg-1 col-md-6">
+                    <h4 class="footer-heading">Tienda</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Planos Residenciales</a></li>
+                        <li><a href="#">Planos Comerciales</a></li>
+                        <li><a href="#">Modelos 3D</a></li>
+                        <li><a href="#">Maquetas</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-heading">Soporte</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Devoluciones</a></li>
+                        <li><a href="#">Guía de Licencias</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h4 class="footer-heading">Contacto</h4>
+                    <ul class="footer-links">
+                        <li class="d-flex mb-3">
+                            <i class="fa-solid fa-location-dot mt-1 me-3 text-white-50"></i>
+                            <span class="text-white-50">Av. Reforma 123, Ciudad de México, CP 06600</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fa-solid fa-envelope mt-1 me-3 text-white-50"></i>
+                            <span class="text-white-50">contacto@acmearq.com</span>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fa-solid fa-phone mt-1 me-3 text-white-50"></i>
+                            <span class="text-white-50">+52 (55) 1234-5678</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 ACME Arquitectura. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.css"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 2px 15px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
